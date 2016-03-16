@@ -18,6 +18,7 @@
         {
             apologize("You must provide your username.");
         }
+        
         else if (empty($_POST["password"]))
         {
             apologize("You must provide your password.");

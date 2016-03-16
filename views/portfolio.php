@@ -21,4 +21,4 @@
         ?>
     </tbody>
 </table>
-<h4>Hello, <?= $user["username"] ?>!! You have $<?= number_format($user["cash"],2) ?></h4>
+<h4>Hello, <?= $user["name"] ." ". $user["last_name"]?> !! You have $<?= number_format($user["cash"],2) ?></h4>

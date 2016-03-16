@@ -1,7 +1,13 @@
 <form action="register.php" method="post">
     <fieldset>
         <div class="form-group">
-            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+            <input autocomplete="off" autofocus class="form-control" name="Name" placeholder="Name" type="text"/>
+        </div>
+         <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="Last_Name" placeholder="Last Name" type="text"/>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="Username" placeholder="Username" type="text"/>
         </div>
         <div class="form-group">
             <input class="form-control" name="password" placeholder="Password" type="password"/>
