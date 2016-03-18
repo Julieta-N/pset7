@@ -6,7 +6,7 @@
             <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text"/>
         </div>
         <div class="form-group">
-            <button class="btn btn-default" type="submit">
+            <button class="btn btn-primary" type="submit">
                 <span aria-hidden="true" class="glyphicon glyphicon-search"></span>
                 Get Quote
             </button>
