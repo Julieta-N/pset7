@@ -10,7 +10,7 @@
             <input class="form-control" name="password" placeholder="Password" type="password"/>
         </div>
         <div class="form-group">
-            <button class="btn btn-default" type="submit">
+            <button class="btn btn-primary" type="submit">
                 <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
                 <head> <style type="text/css"> body { color: #691336 ;} </style> </head>
                 Log In
