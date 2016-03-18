@@ -13,7 +13,7 @@
     // else if user reached page via POST (as by submitting a form via POST)
     else if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        //dump($_POST);
+    
         // TODO
         //Error si hay una vacante
         if ( empty($_POST["Username"]) || empty($_POST["Name"]) ||  empty($_POST["Last_Name"]) || empty($_POST["password"])) {

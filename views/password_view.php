@@ -1,3 +1,5 @@
+<head> <style type="text/css"> body { background-color: #ffefcb; font-family: Candara; } </style> </head>
+
 <form action="password.php" method="post">
     <fieldset>
         <div class="form-group">
@@ -8,7 +10,7 @@
         </div>
         <div class="form-group">
             <button class="btn btn-default" type="submit">
-                <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                <span aria-hidden="true" class="glyphicon glyphicon-sort"></span>
                 Change password
             </button>
         </div>

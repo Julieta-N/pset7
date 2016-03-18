@@ -1,3 +1,5 @@
+<head> <style type="text/css"> body { background-color: #ecf4f9; font-family: Candara; color:#1b51a6 } </style> </head> 
+
 <form action="quote.php" method="post">
     <fieldset>
         <div class="form-group">
@@ -5,7 +7,7 @@
         </div>
         <div class="form-group">
             <button class="btn btn-default" type="submit">
-                <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                <span aria-hidden="true" class="glyphicon glyphicon-search"></span>
                 Get Quote
             </button>
         </div>

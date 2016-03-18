@@ -1,3 +1,4 @@
+<head> <style type="text/css"> body { background-color: #f9f3e9; font-family: Candara; color:#853724} </style> </head>
 
 <table class = "table table-condensed">
     <th> Transaction </th>

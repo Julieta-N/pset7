@@ -1,3 +1,6 @@
+<head> <style type="text/css"> body { background-color: #d1e1e5; font-family: Candara;} </style> </head> 
+
+
 <form action="login.php" method="post">
     <fieldset>
         <div class="form-group">
@@ -9,6 +12,7 @@
         <div class="form-group">
             <button class="btn btn-default" type="submit">
                 <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                <head> <style type="text/css"> body { color: #691336 ;} </style> </head>
                 Log In
             </button>
         </div>
