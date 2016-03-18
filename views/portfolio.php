@@ -1,6 +1,6 @@
 <head> <style type="text/css"> body { background-color: #f5fff4; font-family: Candara; color:#4d764e  } </style> </head>
 
-<table class = "table table-condensed">
+<table class = "table table-bordered">
     <th> Symbol </th>
     <th> Shares </th>
     <th> Name </th>
