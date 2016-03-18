@@ -14,7 +14,7 @@
          // Crear variable para rellenar
         $symbol = !empty($_GET["symbol"]) ? $_GET["symbol"]: "";
         
-        render("buy_form.php", ["title" => "Buy"]);
+        render("buy_form.php", ["title" => "Buy", "symbol" => $symbol]);
     }    
        
         

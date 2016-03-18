@@ -6,6 +6,8 @@
 **/
 ?>
 
+<head> <style type="text/css"> body { background-color: #ecf4f9; font-family: Candara; color:#1b51a6 } </style> </head> 
+
 <h1>A share of <?= $stock["name"] ?> $<?= $stock["price"] ?></h1>
 
 <div class="form-group">
