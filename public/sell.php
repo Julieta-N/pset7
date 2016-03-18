@@ -56,8 +56,17 @@
             
             if ($number_of_shares > $_POST["shares"])
             {
-               
+               // Multiplicar
+                $abono = $_POST["shares"] * $stock["price"];
+                // abono saldo
+                CS50::query("UPDATE users SET cash = cash + $abono WHERE id = ?", $_SESSION["id"]);
+                
                 CS50::query("UPDATE Portfolio SET shares = shares - ? WHERE user_id = ? AND symbol = ?",  $_POST["shares"], $_SESSION["id"], $_POST["symbol"]);
+                
+                //update history
+                CS50::query("INSERT INTO history (user_id, transaction, datetime, symbol, shares, price) VALUES (?, 'SELL', NOW(), ?, ?, ?)",
+                $_SESSION["id"], $_POST["symbol"],$_POST["shares"], $stock["price"]);
+        
             }
             else if ($number_of_shares == $_POST["shares"] || $_POST["shares"] == "ALL" )
             {
@@ -67,14 +76,16 @@
                 CS50::query("UPDATE users SET cash = cash + $abono WHERE id = ?", $_SESSION["id"]);
                 //Remove stock from portfolio
                 $rows = CS50::query("DELETE FROM Portfolio WHERE user_id = ? AND Symbol = ?", $_SESSION["id"],$_POST["symbol"]);
+                //update history
+                CS50::query("INSERT INTO history (user_id, transaction, datetime, symbol, shares, price) VALUES (?, 'SELL', NOW(), ?, ?, ?)",
+                $_SESSION["id"], $_POST["symbol"],$share_rows[0]["shares"], $stock["price"]);
+        
+        
             }
          
             
         
         
-        //update history
-        CS50::query("INSERT INTO history (user_id, transaction, datetime, symbol, shares, price) VALUES (?, 'SELL', NOW(), ?, ?, ?)",
-            $_SESSION["id"], $_POST["symbol"],$share_rows[0]["shares"], $stock["price"]);
             redirect("/");
     }
     
